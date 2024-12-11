@@ -28,7 +28,7 @@ function App() {
       <div className="h-dvh w-full flex flex-col selection:bg-primary selection:text-white pb-2 text-sm">
         <Router>
           <Routes>
-            <Route path="/" element={<Navigate to="/chat" />} />
+            <Route path="/" element={<Navigate to="/image" />} />
             <Route
               path="/image"
               element={
@@ -38,16 +38,6 @@ function App() {
                 </>
               }
             />
-            <Route
-              path="/chat"
-              element={
-                <>
-                  <Header />
-                  <Chat />
-                </>
-              }
-            />
-            <Route path="/web-copilot" element={<WebCopilot />} />
           </Routes>
         </Router>
       </div>

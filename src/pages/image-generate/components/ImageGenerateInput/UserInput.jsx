@@ -221,6 +221,7 @@ export default function ({ inputs, setInputs, onStop, onSubmit, onGenerate }) {
           {t('chat.start_generation')}
         </Button>
       </div>
+      <div className="mt-10">Tips: 英文提示词会大大提升生成质量, 可以先点击 [优化] 按钮后, 在点击 [翻译] 按钮后再进行生成.</div>
     </div>
   );
 }

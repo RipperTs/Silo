@@ -45,20 +45,6 @@ const SecretKeyPopup = forwardRef(({ onImport, checkKeyValid }, ref) => {
       });
   };
   useEffect(() => {
-    if (isExperienceSK()) {
-      notification.info({
-        title: t('common.experience_key_title'),
-        content: t('common.experience_key_content'),
-        closeBtn: true,
-        duration: 1000 * 6,
-        placement: 'bottom-right',
-        offset: [-20, -20],
-      });
-    }
-    setError('');
-    check();
-  }, [secretKey]);
-  useEffect(() => {
     check();
   }, [paidSkPassword]);
 
@@ -82,7 +68,7 @@ const SecretKeyPopup = forwardRef(({ onImport, checkKeyValid }, ref) => {
           className="w-full flex-1 flex flex-col justify-center items-center"
           onClick={e => e.stopPropagation()}
         >
-          {!!SILO_ENV.IS_PAID_SK_ENCRYPTED ? (
+          {SILO_ENV.IS_PAID_SK_ENCRYPTED ? (
             <>
               <div className="flex items-center justify-center mb-6">
                 <img src="/logo.svg" alt="SiloChat" className="h-16" />
