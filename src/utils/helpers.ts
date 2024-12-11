@@ -75,7 +75,7 @@ export const getChatCompletion = async (
       Authorization: `Bearer ${sk}`,
     },
     body: JSON.stringify({
-      model: modelId || 'Qwen/Qwen2.5-7B-Instruct',
+      model: modelId || 'THUDM/glm-4-9b-chat',
       messages,
       temperature: top_p || isNumber(temperature) ? temperature : 0.7,
       top_p,

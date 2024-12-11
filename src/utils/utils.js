@@ -101,11 +101,7 @@ export async function streamChat (model, messages, controller, onChunk, onEnd, o
 export const isBrowserExtension = !!import.meta.env.BROWSER
 
 export function checkModelLimit (modelId) {
-  if (isExperienceSK()) {
-    if (isLimitedModel(modelId)) {
-      throw new Error('为了长久的提供基础服务，体验密钥暂不支持该模型，请见谅')
-    }
-  }
+
 }
 
 /**
