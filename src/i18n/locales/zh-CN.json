@@ -1,6 +1,6 @@
 {
   "common": {
-    "title": "Silo - 多模型对话，文生图",
+    "title": "AI 文生图",
     "copied": "已复制",
     "apply_to_all": "应用到全部",
     "apply_to_all_tooltip": "不同模型支持的参数或有效区间可能存在不同，将尽可能将当前配置应用到其他的模型",
